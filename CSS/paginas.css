@@ -1,0 +1,540 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    scrollbar-width: none;
+    background-color: #e7e7e7;
+    font-family: "lato", sans-serif;  
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #404040;
+}
+
+/* --------------- Back to top button --------------- */
+
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #00C8C8;
+    bottom: 25px;
+    right: 40px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    z-index: 999;
+}
+
+.gotopbtn{
+    border-radius: 10px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* --------------- Header --------------- */
+
+header{
+    background: #202020;
+    padding-bottom: 1px;
+}
+
+/* --------------- Navbar 1 --------------- */
+
+.nav1 .left{
+    float: left;
+}
+
+.nav1 .right {
+    float: right;
+}
+
+.nav1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: rgb(0, 189, 189);*/
+    background: linear-gradient(27deg, rgb(0, 158, 255) 0%, rgba(0,236,208,1) 100%);
+}
+
+.nav1 a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.nav1 a.active {
+    background-color: rgb(0, 200, 200);
+    border-radius: 25px 0px 0px 25px;
+}
+
+/* -------------- Menú en tablet -------------- */
+
+#menu{
+    display: none;
+}
+
+.icono{
+    width: 25px;
+}
+
+header label{
+    display: none;
+    width: 25px;
+    height: 25px;
+    margin: 10px; 
+    cursor: pointer;
+}
+
+@media(max-width: 768px){
+    header label{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.5s;
+        border-top: 1px solid #3F3F3F;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+    }
+
+    #menu:checked ~ .navbar{
+        margin: 0; 
+    }
+}
+
+/* ------------- Menú horizontal ------------- */
+
+ul.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(32, 32, 32);
+}
+
+/*ul.topnav li {
+    float: left;
+}*/
+
+ul.topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+
+ul.topnav .button:hover:not(.active) {
+    background-color: rgba(0,198,174,1);
+    transition: all .2s;
+}
+
+ul.topnav .button li a:hover:not(.active) {
+    background-color: rgba(0,236,208,1);
+    transition: all .5s;
+}
+
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+/* ---|Tablet 768px|--- */
+@media screen and (max-width: 768px){ 
+    ul.topnav li {float: none;}
+    .button{
+        display: block;
+        flex-wrap: none;
+        float: none;
+    }
+}
+
+/* ---| Oculto & Mostrar GIF en Menú |--- */
+
+#mostrar-btn{
+    text-decoration: none;
+    font-family: none;
+    
+    text-align: center;
+    padding: 8px 13px;
+    cursor: pointer;
+    /*background-color: rgb(54, 54, 54);*/
+    color: white;
+    border-left: 1px solid #646464;
+
+    float: left;
+}
+
+.contenido-oculto {
+    display: none;
+    position: absolute;
+}
+
+.img-menu {
+    position: absolute;
+    z-index: 800;
+    margin-top: 35px;
+    margin-left: -13px;
+    height: 200px;
+    width: 200px;
+}
+
+/* ---|Tablet 768px|--- */
+@media screen and (max-width: 768px){ 
+    #mostrar-btn{background-color: rgb(54, 54, 54);}
+
+    ul.topnav .button:hover:not(.active) {
+    background-color: rgba(0,236,208,1);
+    }
+}
+
+/* ---------- Banner Imagen / Información ---------- */
+
+.imabanner{
+    display: flex;
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0; 
+}
+
+/* --------------- Main > Información --------------- */
+
+main{
+    display: flex;
+    margin-top: 200px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+main .wrapper{
+    display: block;
+    margin: 10px;
+    padding: 5px 50px 50px 50px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+main .wrapper .title{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+main .wrapper .tamaño-imagen{
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+main .wrapper .size-imagen{
+    width: 100%;
+}
+
+/* ---|Phone 600px|--- */
+@media screen and (max-width: 600px){
+    main {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* ---|Tablet 675px|--- */
+
+@media screen and (max-width: 675px){
+    main .wrapper .title{
+        font-size: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    main .wrapper .tamaño-imagen {
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* --- | Main > Right Arrow | --- */
+
+main .wrapper .text{
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+main .wrapper .text .right_arrow{
+    text-decoration: none;
+    color: #5C5C5C;
+}
+
+main .wrapper .text .right_arrow::after{
+    margin: 0 8px;
+}
+
+/* ---- Main > Lista de Articulos ---- */
+
+main .List-contenido{
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: #27282A;
+    width: 250px;
+    height: 440px;
+}
+
+main .List-contenido h3{
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+main .List-contenido ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+main .List-contenido li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+main .List-contenido #down{
+    border-bottom: 1px solid #E5E5E5;
+}
+
+main .List-contenido li:hover {
+  background-color: #f2f2f2;
+  color: rgb(0, 209, 209);
+  transition: all .2s;
+}
+
+/* ---|Laptop pequeña 870px|--- */
+@media screen and (max-width: 870px){
+    main .List-contenido {
+        display: none;
+    }
+}
+
+/* ---|Tablet 768px|--- */
+@media screen and (max-width: 768px){
+    main .List-contenido {
+        display: none;
+    }
+}
+
+/* ---|main > Muestra imagen|--- */
+
+main .wrapper .box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+main .wrapper .box-wrapper .box_img{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+}
+
+main .wrapper .box-wrapper .box_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: .3s linear;
+}
+
+main .wrapper .box-wrapper .box_img:hover img{
+    transform: scale(1.1);
+}
+
+main .wrapper .btn_img{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, .9);
+    width: 100%;
+    height: 100%;
+    z-index: 700;
+}
+
+/*-- Cerrar [X] --*/
+main .wrapper .btn_img .cerrar{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+    z-index: 700;
+    color: red;
+}
+
+/*-- Pagina [+] --*/
+main .wrapper .btn_img .btn_pag{
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+    z-index: 700;
+    color: #E5E5E5;
+}
+
+/* ---|Phone > [+] 600px|--- */
+@media (max-width: 600px) {
+    main .wrapper .btn_img .btn_pag{
+        top: 0;
+        right: 95px;
+    }
+}
+
+main .wrapper .btn_img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    height: 650px;
+    padding: 20px;
+    object-fit: cover;
+}
+
+/* ---|Tablet 768px|--- */
+@media (max-width: 768px) {
+    main .wrapper .btn_img img{
+        width: 90%;
+        object-fit: contain;
+    }
+}
+
+/* --------------- Footer --------------- */
+
+/*footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+
+    padding: 0 20px 0 20px;
+
+    background-color: #000;
+    color: white;
+    bottom: 0;
+}*/
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background: #111111;
+    padding: 20px 50px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer .wave{
+    position: absolute;
+    top: -79px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: url(../banner/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 100;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 15s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 99;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 10s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 98;
+    opacity: 0.3;
+    bottom: 15;
+    animation: animateWave 30s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 97;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 30s linear infinite;
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}

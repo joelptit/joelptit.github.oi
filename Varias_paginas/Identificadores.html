@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Señas UNELLEZ</title>
+
+        <!-- ------ ICON ------ -->
+        <link rel="Icon" type="png" href="../señas.png">
+
+        <!-- ------ CSS ------ -->
+        <link rel="stylesheet" href="../CSS/paginas.css">
+
+        <!-- ------ JS ------ -->
+        <script src=""></script>
+    </head>
+
+    <body>
+        <!-- Back to top button -->
+        <a class="gotopbtn" href="#">▲</a>
+
+        <!-- ------ HEADER ------ -->
+        <header>
+            <!-- ------ NAVABAR 1 ------ -->
+
+            <div class="nav1">
+                <div>
+                    <a href="../index.html" class="left" style="font-style: oblique"><b>Señas UNELLEZ</b></a>
+                </div>
+                <div>
+                    <a href="../login.html" class="right active"><b>Iniciar sesión</b></a>
+                </div>
+            </div>
+
+            <!-- ------ MENÚ en Phone ------ -->
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img class="icono" src="../CSS/Menu/menu.png">
+            </label>
+
+            <!-- ------ NAVABAR 2 ------ -->
+            <nav class="navbar">
+                <!-- ------ Nav > MENÚ HORIZONTAL ------ -->
+                <ul class="topnav">
+                    
+                    <!-- ------ Imagen 1 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img1');"> › </a>
+                        <div class="contenido-oculto" id="img1">
+                            <img src="../GIF/GIF_Inicio.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="../index.html"><b>INICIO</b></a>
+                        </li>
+                    </div>
+
+                    <!-- ------ Imagen 2 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img2');"> › </a>
+                        <div class="contenido-oculto" id="img2">
+                            <img src="../GIF/GIF_Programacion.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Programacion.html"><b>Programación</b></a>
+                        </li>
+                    </div>
+                    
+                    <!-- ------ Imagen 3 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img3');"> › </a>
+                        <div class="contenido-oculto" id="img3">
+                            <img src="../GIF/GIF_Herramientas.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Herramientas.html"><b>Herramientas</b></a>
+                        </li>
+                    </div>
+                   
+                   <!-- ------ Imagen 4 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn"  onclick="ocultarover('img4');"> › </a>
+                        <div class="contenido-oculto" id="img4">
+                            <img src="../GIF/GIF_Estructuras.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Estructuras.html"><b>Estructuras</b></a>
+                        </li>
+                    </div>
+
+                    <!-- ------ Imagen 5 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img5');"> › </a>
+                        <div class="contenido-oculto" id="img5">
+                            <img src="../GIF/GIF_Operadores.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Operadores.html"><b>Operadores</b></a>
+                        </li>
+                    </div>
+
+                    <!-- ------ Imagen 6 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img6');"> › </a>
+                        <div class="contenido-oculto" id="img6">
+                            <img src="../GIF/GIF_Identificadores.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Identificadores.html"><b>Identificadores</b></a>
+                        </li>
+                    </div>
+
+                    <!-- ------ Imagen 7 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img7');"> › </a>
+                        <div class="contenido-oculto" id="img7">
+                            <img src="../GIF/GIF_Tipos_datos.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Tipos_datos.html"><b>Tipos de datos</b></a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <!--------------- Banner Imagen / Información --------------->
+        <img src="Imagenes/fondo_identificadores.jpg" class="imabanner">
+
+        <!-- ------ MAIN ------ -->
+        <main>
+            <div class="wrapper">
+                <!-- ------ Right Arrow ------ -->
+                <div class="text">
+                    <a class="right_arrow" href="../index.html">Inicio / </a>
+                    <a class="right_arrow" href="Categorias.html">Contenido / </a>
+                    <span class="right_arrow">Identificadores</span>
+                </div>
+
+                <h1 class="title">Identificadores</h1>
+                <div>
+                    <img src="../GIF/Identificadores.gif" class="size-imagen">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; Es un conjunto de caracteres alfanuméricos de cualquier longitud que sirve para identificar las entidades del programa (clases, funciones, variables, tipos compuestos) Los identificadores pueden ser combinaciones de letras y números. Cada lenguaje tiene sus propias reglas que definen como pueden estar construidos. Cuando un identificador se asocia a una entidad concreta, entonces es el "nombre" de dicha entidad, y en adelante la representa en el programa.
+                    </p>
+                </div>
+
+                <h1 class="title">Variables</h1>
+                <div>
+                    <img src="../GIF/Variable.gif" class="size-imagen">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; Una variable es un identificador relacionado a una posición de memoria donde se puedena colocar datos. Al definirse como una variable, el contenido de esa posición de memoria podrá cambiar o ser mofdificado a lo largo del programa.
+                    </p>
+                </div>
+
+                <h1 class="title">Constante</h1>
+                <div>
+                    <img src="../GIF/Constante.gif" class="size-imagen">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; Una constante es básicamente lo mismo que una variable, con la única diferencia que la constante debe ser inicializada en su definición y este valor no se podrá modificar a lo largo del programa.
+                    </p>
+                </div>
+
+                <h1 class="title">Objetos</h1>
+                <div>
+                    <img src="../GIF/Objetos.gif" class="size-imagen">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; Los objetos en programación representan cosas del mundo real, así como conceptos abstractos con sus características y comportamientos específicos. Un objeto cuenta con su estructura interna que combina variables, funciones y estructuras de datos. Usando el nombre del objeto y la sintaxis según el lenguaje de programación, puedes visualizar los valores del objeto y llamar las funciones que tiene predefinidas.
+                    </p>
+                </div>
+
+                <h1 class="title">Registros</h1>
+                <div>
+                    <img src="../GIF/Registros.gif" class="size-imagen">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; En programación, un registro son datos que se almacenan y se organizan con el propósito de usarlos de una forma eficiente. Por ello se encuentran bajo una estructura similar, además existe la opción de que sean diferentes. Es decir, de números, de caracteres o de valores reales. Asimismo, a cada espacio que ocupa dicha información o dato en el registro, se le dice campo.
+                    </p>
+                </div>
+
+                <h1 class="title">Contadores</h1>
+                <div>
+                    <img src="../GIF/Contadores.gif" class="size-imagen">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; Un contador en programación es una variable especial que se utiliza para contar la ocurrencia de eventos o elementos en un programa. Su función principal es mantener un registro numérico de cuántas veces ha ocurrido un evento específico o cuántos elementos han sido procesados. Los contadores son esenciales cuando necesitamos llevar un seguimiento y controlar iteraciones o repeticiones en el código.
+                    </p>
+                </div>
+
+                <h1 class="title">Bases de datos</h1>
+                <div>
+                    <img src="../GIF/Base_datos.gif" class="size-imagen">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; Una base de datos es un software informático que permite almacenar grandes cantidades de información, de una forma organizada y accesible para su futuro uso. Este sistema de almacenamiento de datos permite realizar búsquedas o ingresar nuevas informaciones de una manera sencilla y rápida desde un ordenador.
+                    </p>
+                </div>
+
+                <h1 class="title">Archivos</h1>
+                <div>
+                    <img src="../GIF/Archivos.gif" class="size-imagen">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; &nbsp; Un archivo es una secuencia de datos almacenados en un medio persistente que están disponibles para ser utilizados por un programa. Todos los archivos tienen un nombre y una ubicación dentro del sistema de archivos del sistema operativo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="List-contenido">
+                <h3>Contenido</h3>
+                <ul>
+                    <li id="down" onclick="location.href='Visagrafia.html'">Visagrafía</li>
+                    <li id="down" onclick="location.href='Lengua.html'">Lengua de Señas Venezolana</li>
+                    <li id="down" onclick="location.href='Programacion.html'">Programación</li>
+                    <li id="down" onclick="location.href='Herramientas.html'">Herramientas</li>
+                    <li id="down" onclick="location.href='Estructuras.html'">Estructuras</li>
+                    <li id="down" onclick="location.href='Operadores.html'">Operadores</li>
+                    <li onclick="location.href='Tipos_datos.html'">Tipos de datos</li>
+                </ul>
+            </div>
+        </main>
+
+
+        <!-- ------ FOOTER ------ -->
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <p>
+                Copyright © 2024 Universidad Nacional Experimental de los 
+                Llanos Occidentales Ezequiel Zamora
+            </p>
+        </footer>
+    </body>
+</html>
+
+<script src="../JS/buttom.js"></script>

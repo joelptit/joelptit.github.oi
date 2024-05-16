@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Señas UNELLEZ</title>
+
+        <!-- ------ ICON ------ -->
+        <link rel="Icon" type="png" href="../señas.png">
+
+        <!-- ------ CSS ------ -->
+        <link rel="stylesheet" href="../CSS/categoria.css">
+
+        <!-- ------ JS ------ -->
+        <script src=""></script>
+    </head>
+
+    <body>
+        <!-- Back to top button -->
+        <a class="gotopbtn" href="#">▲</a>
+
+        <!-- ------ HEADER ------ -->
+        <header>
+            <!-- ------ NAVABAR 1 ------ -->
+
+            <div class="nav1">
+                <div>
+                    <a href="../index.html" class="left" style="font-style: oblique"><b>Señas UNELLEZ</b></a>
+                </div>
+                <div>
+                    <a href="../login.html" class="right active"><b>Iniciar sesión</b></a>
+                </div>
+            </div>
+
+            <!-- ------ MENÚ en Phone ------ -->
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img class="icono" src="../CSS/Menu/menu.png">
+            </label>
+
+            <!-- ------ NAVABAR 2 ------ -->
+            <nav class="navbar">
+                <!-- ------ Nav > MENÚ HORIZONTAL ------ -->
+                <ul class="topnav">
+                    
+                    <!-- ------ Imagen 1 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img1');"> › </a>
+                        <div class="contenido-oculto" id="img1">
+                            <img src="../GIF/GIF_Inicio.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="../index.html"><b>INICIO</b></a>
+                        </li>
+                    </div>
+
+                    <!-- ------ Imagen 2 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img2');"> › </a>
+                        <div class="contenido-oculto" id="img2">
+                            <img src="../GIF/GIF_Programacion.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Programacion.html"><b>Programación</b></a>
+                        </li>
+                    </div>
+                    
+                    <!-- ------ Imagen 3 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img3');"> › </a>
+                        <div class="contenido-oculto" id="img3">
+                            <img src="../GIF/GIF_Herramientas.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Herramientas.html"><b>Herramientas</b></a>
+                        </li>
+                    </div>
+                   
+                   <!-- ------ Imagen 4 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn"  onclick="ocultarover('img4');"> › </a>
+                        <div class="contenido-oculto" id="img4">
+                            <img src="../GIF/GIF_Estructuras.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Estructuras.html"><b>Estructuras</b></a>
+                        </li>
+                    </div>
+
+                    <!-- ------ Imagen 5 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img5');"> › </a>
+                        <div class="contenido-oculto" id="img5">
+                            <img src="../GIF/GIF_Operadores.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Operadores.html"><b>Operadores</b></a>
+                        </li>
+                    </div>
+
+                    <!-- ------ Imagen 6 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img6');"> › </a>
+                        <div class="contenido-oculto" id="img6">
+                            <img src="../GIF/GIF_Identificadores.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Identificadores.html"><b>Identificadores</b></a>
+                        </li>
+                    </div>
+
+                    <!-- ------ Imagen 7 ------ -->
+                    <div class="button">
+                        <a id="mostrar-btn" onclick="ocultarover('img7');"> › </a>
+                        <div class="contenido-oculto" id="img7">
+                            <img src="../GIF/GIF_Tipos_datos.gif" class="img-menu">
+                        </div>
+                        <li>
+                            <a href="Tipos_datos.html"><b>Tipos de datos</b></a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <!--------------- Imagen / Información --------------->
+        <img src="Imagenes/fondo_categorias.jpg" class="imabanner">
+
+        <!-- ------ MAIN ------ -->
+        <h1 class="text-center">Contenido</h1>
+        <main>
+
+            <div class="categoria">
+                <img class="imgan-box" src="Imagenes/visagrafia.jpg">
+                <a href="Visagrafia.html" class="click"><h3>Visagrafía</h3></a>
+                <p>La visagrafía es la representación gráfica de la lengua de señas...<b onclick="location.href='Visagrafia.html'"> Ver mas</b></p>
+            </div>
+
+            <div class="categoria">
+                <img class="imgan-box" src="Imagenes/lengua.jpg">
+                <a href="Lengua.html" class="click"><h3>Lengua de Señas Venezolana</h3></a>
+                <p>
+                    Un punto sumamente imprescindible en la definición referente a la lengua de señas venezolana (LSV)...<b onclick="location.href='Lengua.html'"> Ver mas</b>
+                </p>
+            </div>
+        </main>
+
+        <h1 class="text-center">Programación de computadoras</h1>
+        <main>
+            <div class="categoria">
+                <img class="imgan-box" src="../GIF/GIF_Programacion.gif">
+                <a href="Programacion.html" class="click"><h3>Programación</h3></a>
+                <p>
+                    En el ámbito de la informática, la programación refiere a la acción de crear programas...<b onclick="location.href='Programacion.html'"> Ver mas</b>
+                </p>
+            </div>
+
+            <div class="categoria">
+                <img class="imgan-box" src="../GIF/GIF_Herramientas.gif">
+                <a href="Herramientas.html" class="click"><h3>Herramientas</h3></a>
+                <p>
+                    Las herramientas de programación, o herramienta de desarrollo de software, son programas informáticos...<b onclick="location.href='Herramientas.html'"> Ver mas</b>
+                </p>
+            </div>
+
+            <div class="categoria">
+                <img class="imgan-box" src="../GIF/GIF_Estructuras.gif">
+                <a href="Estructuras.html" class="click"><h3>Estructuras</h3></a>
+                <p>
+                    Las estructuras de programación son un elemento fundamental para definir el flujo que tendrá...<b onclick="location.href='Estructuras.html'"> Ver mas</b>
+                </p>
+            </div>
+
+            <div class="categoria">
+                <img class="imgan-box" src="../GIF/GIF_Operadores.gif">
+                <a href="Operadores.html" class="click"><h3>Operadores</h3></a>
+                <p>
+                    Los operadores en programación son símbolos (+, -, *, /, <, >, %) especiales que realizan operaciones sobre...<b onclick="location.href='Operadores.html'"> Ver mas</b>
+                </p>
+            </div>
+
+            <div class="categoria">
+                <img class="imgan-box" src="../GIF/GIF_Identificadores.gif">
+                <a href="Identificadores.html" class="click"><h3>Identificadores</h3></a>
+                <p>
+                    Es un conjunto de caracteres alfanuméricos de cualquier longitud que sirve para identificar las entidades...<b onclick="location.href='Identificadores.html'"> Ver mas</b>
+                </p>
+            </div>
+
+            <div class="categoria">
+                <img class="imgan-box" src="../GIF/GIF_Tipos_datos.gif">
+                <a href="Tipos_datos.html" class="click"><h3>Tipos de datos</h3></a>
+                <p>
+                    En informática, los tipos de datos se refieren a las diferentes categorías o clases de información...<b onclick="location.href='Tipos_datos.html'"> Ver mas</b>
+                </p>
+            </div>
+        </main>
+
+
+        <!-- ------ FOOTER ------ -->
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <p>
+                Copyright © 2024 Universidad Nacional Experimental de los 
+                Llanos Occidentales Ezequiel Zamora
+            </p>
+        </footer>
+    </body>
+</html>
+
+<script src="../JS/buttom.js"></script>
